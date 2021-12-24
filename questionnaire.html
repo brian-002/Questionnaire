@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+ <body>
+  <style>
+      #top{
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             width:45.4em;
+                 height: 10em;
+                     max-width: 100%;
+                         max-height: 100%;
+                             background-color: rgb(1, 1, 102);
+                                 color: blanchedalmond;
+                                     text-align: center;
+                                         border-radius: 10px;
+      }
+      #middle{
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             background-color: rgb(1, 1, 49);
+                 width: 45.4em;
+                     max-width: 100%;
+                         height: 90em;
+                             max-height: 100%;
+                                 color:blanchedalmond;
+                                     border-radius: 10px;
+      }
+      #bottom{
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+             background-color: rgb(0, 0, 7);
+                 width: 45.4em;
+                     max-width: 100%;
+                         height: 12em;
+                             max-height: 100%;
+                                 color: blanchedalmond;
+                                      margin-top: 0em;
+                                         border-radius: 10px;
+      }
+      .sub-btn{
+          max-height: 100%;
+             max-width: 100%;
+                 background-color: whitesmoke;
+                     border: 0em;
+                         text-align: center;
+                             padding: 5px 4px 4px 5px;
+                                 border-radius: 20px;
+      }
+      #instaphoto{
+          width: 20px;
+             height: 20px;
+                 padding: 0px 0px 0px 0px;
+                     border-radius: 20px;
+                         max-width: 100%;
+                             max-height: 100%;
+      }
+      #twitphoto{
+          width: 20px;
+             height: 20px;
+                 padding: 0px 0px 0px 0px;
+                     border-radius: 20px;
+                         max-width: 100%;
+                             max-height: 100%;
+      }
+      #qitphoto{
+          width: 20px;
+             height: 20px;
+                 padding: 0px 0px 0px 0px;
+                     border-radius: 20px;
+                         max-width: 100%;
+                             max-height: 100%;
+      }
+      #msg{
+          width:15em;
+             height: 4em;
+                 border-radius: 20px;
+                     max-width: 100%;
+                          max-height: 100%;
+      }
+      #explainon1{
+          background-color: beige;
+             width: 20em;
+                 height: 2em;
+                 border-top-right-radius: 20px;
+                     border-bottom-right-radius: 20px;
+                         color: black;
+                             max-width: 100%;
+                                 max-height: 100%;
+      }
+      #quiz-10{
+        background-color: beige;
+             width: 20em;
+                 height: 4em;
+                     border-top-right-radius: 20px;
+                         border-bottom-right-radius: 20px;
+                             color: black;
+                                 max-width: 100%;
+                                      max-height: 100%;
+      }
+      #explainon9{
+        background-color: beige;
+             width: 20em;
+                 height: 4em;
+                     border-top-right-radius: 20px;
+                         border-bottom-right-radius: 20px;
+                             color: black;
+                                  max-width: 100%;
+                                      max-height: 100%;
+      }
+      #explainon8{
+        background-color: beige;
+             width: 20em;
+                 height: 4em;
+                     border-top-right-radius: 20px;
+                         border-bottom-right-radius: 20px;
+                             color: black;
+                                 max-width: 100%;
+                                      max-height: 100%;
+      }
+  </style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>questionnaire</title>
+    </head>
+    <div id="top">
+        <h1><i>QUESTIONNAIRE</i></h1>
+        <P><i>"this questionnaire is to help to cather information on various newspapers in kenya"</i></P>
+        <p><i><b>N/B</b>: you can skip those you don`t know or don`t want to answer</i></p>
+    </div>
+    <div id="middle">
+        <br>
+        <p>1)what is your name?
+            <p id="explainon1" onclick="answer1()"></p>
+        </p>
+        <p>2)how old are you?<br><br>
+            <label><input id="age-range" value="below 18" type="checkbox" name="age_range">Below 18</label><br>
+                 <label><input id="age-range2" value="18-30" type="checkbox" name="age_range">18-30</label><br>
+                     <label><input id="age-range3" value="31-50" type="checkbox" name="age_range">31-50</label><br>
+                         <label><input id="age-range4" value="51-70" type="checkbox" name="age_range">51-70</label><br>
+                             <label><input id="age-range5" value="above 70" type="checkbox" name="age_range">Above 70</label>
+        </p>
+        <p>3)which region are you from?<br>
+            <label><input id="region" value="east-africa" type="checkbox" name="region">East-Africa</label><br>
+                 <label><input id="region2" value="central-africa" type="checkbox" name="region">Central-Africa</label><br>
+                     <label><input id="region3" value="western-africa" type="checkbox" name="region">Western-Africa</label><br>
+                         <label><input id="region4" value="nothern-africa" type="checkbox" name="region">Nothern-Africa</label><br>
+                             <label><input id="region5" value="outside africa" type="checkbox" name="region">Outside Africa</label>
+        </p>
+        <p>3)do you know of any newspaper in kenya?<br><br>
+            <label for="yes"><input id="yes" value="Yes" type="checkbox" name="yes-no">Yes</label>
+                 <label><input id="no" value="No" type="checkbox" name="yes-no">No</label>
+        </p>
+        <p>4)have you read any newspaper in the past 3 months?<br><br>
+            <label><input id="yes2" value="Yes" type="checkbox" name="yes-no">Yes</label>
+                 <label><input id="no2" value="No" type="checkbox" name="yes-no">No</label>
+        </p>
+        <p>5)how do you rate its user frendliness?<br>
+            <label><input id="range" value="0-3" type="checkbox" name="range">0-3(poor)</label><br>
+                 <label><input id="range2" value="4-6" type="checkbox" name="range">4-6(avarage)</label><br>
+                     <label><input id="range1" value="7-10" type="checkbox" name="range">7-10(good)</label><br>
+        </p>
+        <p>6)are kenyan newspapers readly available from where you are?<br><br>
+            <label><input id="yes3" value="Yes" type="checkbox" name="yes-no">Yes</label>
+                 <label><input id="no3" value="No" type="checkbox" name="yes-no">No</label>
+        </p>
+        <p>7)do you think they cover topics that are relevant to you?<br><br>
+            <label><input id="yes4" value="Yes" type="checkbox" name="yes-no">Yes</label>
+                 <label><input id="no4" value="No" type="checkbox" name="yes-no">No</label>
+        </p>
+        <p>8)has reading a kenyan news paper impacted your live,state how?<br><br>
+            <label><input id="yes5" value="Yes" type="checkbox" name="yes-no">Yes</label>
+                 <label><input id="no5" value="No" type="checkbox" name="yes-no">No</label>
+        <p id="explainon8" onclick="answer()"></p>
+        </p>
+        <p>9)would you recommend a certain kenyan newspaper to anyone,why?<br><br>
+            <label><input id="yes6" value="Yes" type="checkbox" name="yes-no">Yes</label>
+                 <label><input id="no6" value="No" type="checkbox" name="yes-no">No</label>
+        <p id="explainon9" onclick="answer9()"></p>
+        </p>
+        <p >10)what are some of the improvements that you think can be made to make them better?
+            <p id="quiz-10" onclick="tenans()"></p>
+        </p><br>
+        <button class="sub-btn" type="submit" onclick="submmit()"><b>Submmit</b></button>
+        <p id="msg"></p>
+        <script src="questionnaire.js"></script>
+    </div>
+    <div id="bottom">
+        <br>
+        <P>follow me on my social media platforms:
+            <ul>
+                <li><img id="qitphoto" src="photos/IMG_20211221_122438_517.JPG" alt="">  qithub:@brian0200 </li>
+                     <li><img id="twitphoto" src="photos/IMG_20211221_122459_270.JPG" alt="">  twitter:@bri</li>
+                         <li><img id="instaphoto" src="photos/IMG_20211221_122511_818.JPG" alt="">  instagram:@Bria_.n</li>
+                             <li>linkedin:@brian</li>
+            </ul>
+        </P>
+    </div>
+ </body>
+</html>
